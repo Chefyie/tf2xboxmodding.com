@@ -1,0 +1,10 @@
+title: TF2 Xbox Modding
+description: >-
+ All about the tf2 xbox modding
+baseurl: ""
+url: "https://tf2xboxmodding.com"
+permalink: pretty
+
+
+sass:
+  style: compresse
