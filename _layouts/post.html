@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - TF2 Xbox Modding</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TF2 XBOX MODDING</h1>
+            <p>The home for TF2 Xbox 360</p>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="post">
+            <h2>{{ page.title }}</h2>
+            <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+            <div class="content" style="margin-top: 20px;">
+                {{ content }}
+            </div>
+            <br>
+            <a href="/index.html" class="read-more">&larr; Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 tf2xboxmodding.com. Not affiliated with Valve Corporation.</p>
+        </div>
+    </footer>
+</body>
+</html>
