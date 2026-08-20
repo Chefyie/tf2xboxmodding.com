@@ -19,21 +19,22 @@
             </nav>
         </div>
     </header>
+    
+<section class="blog-feed">
+    <h2>Latest Blog Posts</h2>
 
-    <!-- Main Content / Blog Feed -->
-    <main class="container">
-        <section class="blog-feed">
-            <h2>Latest Blog Posts</h2>
+    <!-- Jekyll will loop through your _posts folder here -->
+    {% for post in site.posts %}
+    <article class="post">
+        <h3>{{ post.title }}</h3>
+        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="read-more">Read More &rarr;</a>
+    </article>
+    {% endfor %}
 
-            <!-- Blog Post 1 -->
-            <article class="post">
-                <h3>site released</h3>
-                <span class="date">August 19, 2026</span>
-                <p>hi this is a test</p>
-                <a href="#" class="read-more">Read More &rarr;</a>
-            </article>
+</section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 tf2xboxmodding.com. Not affiliated with Valve Corporation.</p>
