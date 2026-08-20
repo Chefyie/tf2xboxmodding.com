@@ -1,0 +1,119 @@
+:root {
+    --tf2-orange: #b84317;
+    --tf2-accent: #f39c12;
+    --tf2-dark: #121212;
+    --tf2-card-bg: #1e1e1e;
+    --tf2-text: #dcdcdc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--tf2-dark);
+    color: var(--tf2-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #1a1a1a;
+    border-bottom: 4px solid var(--tf2-orange);
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--tf2-orange);
+}
+
+header p {
+    color: #999;
+    font-size: 1.05rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: var(--tf2-text);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--tf2-accent);
+}
+
+/* Blog Feed Styling */
+.blog-feed {
+    margin-top: 40px;
+}
+
+.blog-feed h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.post {
+    background: var(--tf2-card-bg);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid var(--tf2-orange);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #888;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--tf2-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #181818;
+    margin-top: 60px;
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid #282828;
+}
